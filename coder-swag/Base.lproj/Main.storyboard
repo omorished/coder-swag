@@ -122,7 +122,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Ro-DP-nfW">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Ro-DP-nfW" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="243"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -165,6 +165,11 @@
                                             <constraint firstItem="sRb-jz-Cd1" firstAttribute="leading" secondItem="8Ro-DP-nfW" secondAttribute="leadingMargin" id="bPN-zn-onx"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="aV1-1U-bHy" secondAttribute="trailing" id="s8K-Gu-cMg"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="productImage" destination="C4d-sE-3vz" id="R9U-uJ-nkN"/>
+                                            <outlet property="productName" destination="aV1-1U-bHy" id="KO5-tK-gZR"/>
+                                            <outlet property="productPrice" destination="sRb-jz-Cd1" id="q4s-BZ-Gsr"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
