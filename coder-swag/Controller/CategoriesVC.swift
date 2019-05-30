@@ -42,7 +42,24 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         return cell
 
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let category: Category = DataServices.instance.getCategories()[indexPath.row] {
+            
+            performSegue(withIdentifier: "goToProductsVC", sender: category)
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToProductsVC" {
+            let VC = segue.destination as! ProductsVC
+            
+            VC.initProducts(category: sender as! Category)
+        }
+    }
 
 }
 

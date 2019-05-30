@@ -16,6 +16,8 @@
 		4C00AC52229B96E60038DFFB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00AC51229B96E60038DFFB /* Category.swift */; };
 		4C00AC54229B98070038DFFB /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00AC53229B98070038DFFB /* DataServices.swift */; };
 		4C00AC57229BC0440038DFFB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00AC56229BC0440038DFFB /* ProductCell.swift */; };
+		4C00AC59229D2DD40038DFFB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00AC58229D2DD40038DFFB /* Product.swift */; };
+		4C00AC5B22A066440038DFFB /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00AC5A22A066440038DFFB /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4C00AC51229B96E60038DFFB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4C00AC53229B98070038DFFB /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		4C00AC56229BC0440038DFFB /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		4C00AC58229D2DD40038DFFB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4C00AC5A22A066440038DFFB /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4C00AC51229B96E60038DFFB /* Category.swift */,
+				4C00AC58229D2DD40038DFFB /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				4C00AC3B229A61E60038DFFB /* CategoriesVC.swift */,
+				4C00AC5A22A066440038DFFB /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,7 +198,9 @@
 				4C00AC3A229A61E60038DFFB /* AppDelegate.swift in Sources */,
 				4C00AC50229A664B0038DFFB /* CategoryCell.swift in Sources */,
 				4C00AC52229B96E60038DFFB /* Category.swift in Sources */,
+				4C00AC5B22A066440038DFFB /* ProductsVC.swift in Sources */,
 				4C00AC57229BC0440038DFFB /* ProductCell.swift in Sources */,
+				4C00AC59229D2DD40038DFFB /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
