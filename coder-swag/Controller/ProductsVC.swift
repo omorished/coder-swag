@@ -25,9 +25,11 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
     }
     
+    //used in prepareForSegue in CategorieVC
     func initProducts(category: Category) {
         
         productsList = DataServices.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

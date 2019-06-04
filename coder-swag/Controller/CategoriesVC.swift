@@ -45,18 +45,24 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let category: Category = DataServices.instance.getCategories()[indexPath.row] {
+         let category: Category = DataServices.instance.getCategories()[indexPath.row]
             
             performSegue(withIdentifier: "goToProductsVC", sender: category)
             
-        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        //to make back button only arrow without text (in ProductVC)
+        let backBtn = UIBarButtonItem()
+        backBtn.title = ""
+        navigationItem.backBarButtonItem = backBtn
+        
         if segue.identifier == "goToProductsVC" {
             let VC = segue.destination as! ProductsVC
             
+            assert(sender as? Category != nil)
             VC.initProducts(category: sender as! Category)
         }
     }
